@@ -64,7 +64,7 @@ function sendLiff() {
 
   } else if (type === 'video') {
     const video = getParameterByName('ocu');
-    const preview = getParameterByName('piu') || "https://i.ibb.co/TTSjGpt/activity.gif";
+    const preview = getParameterByName('piu') || "https://i.ibb.co/6RBHpqxN/FB-IMG-1752072513178.jpg";
     liff.sendMessages([{
       type: 'video',
       originalContentUrl: video,
