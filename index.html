@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>LIFF Auto Message</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 20px;
+      color: #00796b;
+    }
+    #status {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #444;
+      white-space: pre-line;
+    }
+    #debug {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #888;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>ส่งข้อความผ่าน LIFF</h1>
+    <div id="status">🔄 กำลังโหลด LIFF...</div>
+    <div id="debug"></div>
+  </div>
+  <script src="liff-starter.js"></script>
+</body>
+</html>
